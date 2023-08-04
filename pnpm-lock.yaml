@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ant-design/icons': ^5.2.4
   '@refinedev/antd': ^5.32.0
   '@refinedev/cli': ^2.7.4
   '@refinedev/core': ^4.32.2
@@ -20,6 +21,7 @@ specifiers:
   vite: ^4.3.1
 
 dependencies:
+  '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/5.2.4_biqbaboplfbrettd7655fr4n2y
   '@refinedev/antd': registry.npmmirror.com/@refinedev/antd/5.32.0_xdkrwiwqj6ygryd7xggrvxeiyu
   '@refinedev/cli': registry.npmmirror.com/@refinedev/cli/2.7.4_fzrd6ivowi4azn3madm57eamia
   '@refinedev/core': registry.npmmirror.com/@refinedev/core/4.32.2_fnrvimhhml6lvqlvghdjxbhtmm
@@ -161,7 +163,7 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
     dependencies:
-      '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/5.0.1_biqbaboplfbrettd7655fr4n2y
+      '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/5.2.4_biqbaboplfbrettd7655fr4n2y
       '@ant-design/pro-provider': registry.npmmirror.com/@ant-design/pro-provider/2.4.3_tmr2bw6d5wg6omcka6zff5n3da
       '@ant-design/pro-utils': registry.npmmirror.com/@ant-design/pro-utils/2.5.9_tmr2bw6d5wg6omcka6zff5n3da
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.22.6
