@@ -42,6 +42,8 @@ const authCredentials = {
   password: "demodemo",
 };
 
+const authKey = "key";
+
 const App: React.FC = () => {
   const authProvider: AuthBindings = {
     login: async ({ providerName, email }) => {
@@ -177,13 +179,13 @@ const App: React.FC = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve({});
-      }, 1000);
+      }, 2000);
     });
   }
 
   return (
     <BrowserRouter>
-      <GitHubBanner />
+      {/* <GitHubBanner /> */}
       <ConfigProvider theme={RefineThemes.Blue}>
         <Refine
           authProvider={authProvider}
@@ -214,7 +216,11 @@ const App: React.FC = () => {
           <Routes>
             <Route
               element={
-                <Authenticated fallback={<CatchAllNavigate to="/login" />}>
+                <Authenticated
+                  key={"uno"}
+                  fallback={<CatchAllNavigate to="/login" />}
+                  loading={"checking user authentication"}
+                >
                   <ThemedLayoutV2>
                     <Outlet />
                   </ThemedLayoutV2>
@@ -232,7 +238,7 @@ const App: React.FC = () => {
 
             <Route
               element={
-                <Authenticated fallback={<Outlet />}>
+                <Authenticated key={"tres"} fallback={<Outlet />}>
                   <NavigateToResource resource="posts" />
                 </Authenticated>
               }
@@ -322,7 +328,7 @@ const App: React.FC = () => {
 
             <Route
               element={
-                <Authenticated>
+                <Authenticated key={"dos"}>
                   <ThemedLayoutV2>
                     <Outlet />
                   </ThemedLayoutV2>
